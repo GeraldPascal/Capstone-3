@@ -1,7 +1,7 @@
 # 🏡 JCDS2804 - Capstone Project 3
 
 ## 📌 Project Title
-**Prediksi Harga Rumah: Model Machine Learning untuk Estimasi Nilai Properti**
+**Predictive Modeling of Apartment Sale Prices in Daegu: A Data Science Approach**
 
 ---
 
