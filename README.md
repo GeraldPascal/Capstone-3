@@ -1,68 +1,85 @@
-##🧾 Prediksi Harga Rumah: Model Machine Learning untuk Estimasi Nilai Properti
-Tempat pengumpulan capstones 3
-Notebook ini menyajikan pipeline prediktif lengkap untuk memperkirakan harga rumah berdasarkan fitur-fitur properti yang tersedia. Proyek ini bertujuan untuk:
+# 🏡 JCDS2804 - Capstone Project 3
 
-Meningkatkan akurasi estimasi harga rumah
+## 📌 Project Title
+**Prediksi Harga Rumah: Model Machine Learning untuk Estimasi Nilai Properti**
 
-Menerapkan teknik Machine Learning yang tepat untuk regresi
+---
 
-Mengoptimalkan preprocessing dan seleksi fitur
+## 📖 Deskripsi Proyek
 
-🎯 Tujuan Proyek
-Membangun model prediktif berbasis data yang mampu memperkirakan harga rumah secara akurat, sebagai solusi dalam pengambilan keputusan jual-beli properti atau sebagai dasar sistem rekomendasi properti online.
+Proyek ini bertujuan untuk membangun sistem prediksi harga rumah berdasarkan berbagai fitur properti seperti ukuran, kualitas bangunan, dan lokasi. Dengan pendekatan machine learning, model ini membantu pemangku kepentingan seperti agen properti, pembeli, maupun platform properti digital dalam memperkirakan harga rumah secara lebih objektif dan akurat.
 
-🗂️ Isi Notebook
-Notebook ini terdiri atas beberapa tahapan utama:
+---
 
-Eksplorasi Data Awal & Pembersihan Data
+## 🎯 Tujuan Proyek
 
-Menangani missing values
+- Memprediksi harga rumah secara akurat menggunakan data historis
+- Mengaplikasikan metode regresi dan teknik preprocessing modern
+- Mengidentifikasi fitur-fitur properti paling berpengaruh terhadap harga
+- Mengembangkan pipeline model yang siap untuk deployment
 
-Deteksi dan penanganan outlier
+---
 
-Transformasi variabel kategorikal dan numerik
+## 🗂️ Struktur Notebook
 
-Feature Engineering
+1. **Eksplorasi & Pembersihan Data**
+   - Penanganan nilai kosong (missing values)
+   - Deteksi dan penanganan outlier
+   - Transformasi fitur kategorikal dan numerik
 
-Encoding variabel kategorikal
+2. **Feature Engineering**
+   - Encoding: One-Hot & Label Encoding
+   - Transformasi logaritmik untuk distribusi skewed
+   - Standardisasi/normalisasi
 
-Transformasi log dan scaling
+3. **Pemodelan**
+   - Algoritma: Linear Regression, Ridge, Lasso, XGBoost
+   - Evaluasi performa: RMSE, Cross-validation
+   - Hyperparameter tuning
 
-Seleksi fitur
+4. **Deployment**
+   - Simpan model dengan `joblib`
+   - Prediksi terhadap data baru tanpa target
 
-Modeling & Evaluasi
+---
 
-Linear Regression, Ridge, Lasso, dan XGBoost
+## 🧪 Teknologi & Tools
 
-Evaluasi model dengan RMSE
+- Python 3
+- Jupyter Notebook
+- Pandas, NumPy
+- Matplotlib, Seaborn
+- Scikit-learn
+- XGBoost
+- Joblib
 
-Cross-validation dan hyperparameter tuning
+---
 
-Deployment Model
+## 📊 Hasil & Insight
 
-Menyimpan model menggunakan joblib
+- **XGBoost** memberikan hasil terbaik dengan error terendah (RMSE).
+- Fitur paling penting:
+  - `OverallQual` (Kualitas keseluruhan bangunan)
+  - `GrLivArea` (Luas ruang tinggal di atas tanah)
+  - `TotalBsmtSF` (Luas basement total)
+- Model mampu memberikan prediksi harga rumah yang masuk akal dan stabil.
 
-Prediksi terhadap data baru
+---
 
-📌 Hasil Utama
-Model XGBoost Regressor menghasilkan performa terbaik dengan RMSE terendah.
+## 🚀 Deployment & Penggunaan
 
-Fitur penting seperti OverallQual, GrLivArea, dan TotalBsmtSF terbukti paling berpengaruh terhadap harga rumah.
+Model telah disimpan dalam bentuk `.pkl` atau `.joblib` dan bisa digunakan untuk prediksi harga pada data baru yang memiliki format serupa, namun belum memiliki nilai target (`SalePrice`).
 
-Pipeline berhasil dikembangkan untuk prediksi harga terhadap data yang belum diketahui nilai targetnya.
+---
 
-🧰 Teknologi yang Digunakan
-Python
+## 📎 Catatan Tambahan
 
-Pandas, NumPy
+Proyek ini dibuat sebagai bagian dari program capstone bootcamp **Purwadhika Data Science - Batch JCDS2804**.  
 
-Matplotlib, Seaborn
+---
 
-Scikit-learn
+## 👨‍💻 Author
 
-XGBoost
-
-Joblib
-
-📎 Catatan Tambahan
-Model ini cocok digunakan untuk membantu agen properti atau sistem online dalam memberikan estimasi harga awal terhadap properti berdasarkan fitur fisik dan lokasi.
+**Gerald Pascal Ginting**  
+📧 Email: [geral.ginting@email.com](mailto:geral.ginting@email.com)  
+📍 Purwadhika Data Science Bootcamp  
